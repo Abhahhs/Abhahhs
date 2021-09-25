@@ -1,13 +1,30 @@
-#include <iostream>
 
+#include <cstring>
+#include <iostream>
 using namespace std;
 
-int main () {
 
-   char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+int main()
+{
 
-   cout << "Greeting message: ";
-   cout << greeting << endl;
+	// initializing variables
+	char st[] = "GeeksforGeeks";
+	char ch = 'e';
+	char* val;
 
-   return 0;
+	
+	val = strrchr(st, ch);
+
+	cout <<"String after last " << ch << " is : " << val << endl;
+
+	char ch2 = 'm';
+
+	
+	val = strrchr(st, ch2);
+
+	cout <<"String after last " << ch2 << " is : " << val << endl;
+
+	return (0);
 }
+
+
