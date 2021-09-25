@@ -8,7 +8,7 @@ int main()
 {
 
 	// initializing variables
-	char st[] = "GeeksforGeeks";
+	char st[] = "good night";
 	char ch = 'e';
 	char* val;
 
