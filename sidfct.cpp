@@ -11,13 +11,13 @@ class student
         int   total;
         float perc;
     public:
-        //member function to get student's details
+        
         void getDetails(void);
-        //member function to print student's details
+       
         void putDetails(void);
 };
  
-//member function definition, outside of the class
+
 void student::getDetails(void){
     cout << "Enter name: " ;
     cin >> name;
@@ -29,7 +29,7 @@ void student::getDetails(void){
     perc=(float)total/500*100;
 }
  
-//member function definition, outside of the class
+
 void student::putDetails(void){
     cout << "Student details:\n";
     cout << "Name:"<< name << ",Roll Number:" << rollNo << ",Total:" << total << ",Percentage:" << perc;
@@ -37,7 +37,7 @@ void student::putDetails(void){
  
 int main()
 {
-    student std[MAX];       //array of objects creation
+    student std[MAX];      
     int n,loop;
      
     cout << "Enter total number of students: ";
